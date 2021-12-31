@@ -1,0 +1,50 @@
+h3::first-letter{
+    color: #00796B;
+    font-size: 3em;
+}
+h3:hover::first-letter{
+    color: #4FC3F7;
+}
+li:nth-of-type(1)::first-letter{
+    font-size: 2em;
+    text-decoration: overline;
+    color: #4FC3F7;
+}
+li:nth-of-type(2)::first-letter{
+    font-size: 2em;
+    text-decoration: underline;
+    color: #C51162;
+}
+li:nth-of-type(3){
+    text-decoration: line-through;
+}
+li:nth-of-type(3)::first-letter{
+    font-size: 2em;
+    text-decoration: line-through black;
+    color: #64DD17;
+}
+p:nth-of-type(1){
+    color: #37474F;
+    text-indent: 50px;
+}
+p:nth-of-type(1)::first-line{
+    font-size: 1.3em;
+}
+p:not(:nth-of-type(1))::first-letter{
+    color: #D50000;
+    font-size: 1.5em;
+}
+/* mit 1n wird jedes element angesprochen das +2 gibt an, an welcher stelle begonnen wird. das erste p wird dabei übersprungen und fängt dann beim 2ten an */
+/* p:nth-of-type(1n +2 )::first-letter{
+    color: aquamarine;
+    font-size: 2em;
+} */
+p:nth-of-type(1n +2 )::first-line{
+    color: green;
+}
+p:nth-of-type(1n +2 ):hover::first-line{
+    color: #303F9F;
+}
+p:nth-of-type(even){
+    font-weight: 600;
+}

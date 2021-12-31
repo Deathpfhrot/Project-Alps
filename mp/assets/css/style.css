@@ -1,0 +1,74 @@
+@font-face {
+    font-family: kitty;
+    src: url(../font/kitty/Hello\ Kitty.otf);
+}
+@font-face {
+    font-family: simon;
+    src: url(../font/monofonto/monofonto.otf);
+}
+@font-face {
+    font-family: patrickHomeFont ;
+    src: url(../font/Roboto/Roboto-Regular.ttf), 
+    url(../font/Roboto/Roboto-Regular.woff);
+}
+@font-face {
+    font-family: patrickMedium;
+    src: url(../font/Roboto/Roboto-Medium.ttf);
+}
+html{
+    font-size: 100%;
+}
+
+header img{
+    width: 30px;
+}
+nav{
+    margin: -50px 10px 0 0 ;
+}
+nav ul li{
+    text-align: right;
+    list-style: none;
+    border: 1px solid ;
+    padding: 30px 10px 30px 0;
+}
+a{
+    font-family: patrickHomeFont;
+}
+
+section:nth-of-type(3) p{
+    color: red;
+    margin: 80px 40px;
+    padding: 80px 40px;
+    font-family: patrickMedium;
+
+}
+section:nth-of-type(4) p:nth-of-type(2){
+    color: brown;
+    font-size: 30px;
+    font-family: kitty;
+}
+
+section:nth-of-type(5){
+    width: 600px;
+    border: 1px solid;
+    margin: 100px auto;
+}
+section:nth-of-type(5) p{
+    font-family: simon;
+    color: blueviolet;
+    margin: 100px auto;
+    width: 200px;
+}
+section:nth-of-type(5) p::before{
+    content: "a";
+    font-family: kitty;
+    font-size: 30px;
+}
+section:nth-of-type(5) p::after{
+    content: "B";
+    font-family: kitty;
+    font-size: 30px;
+}
+
+
+/* PX  */
